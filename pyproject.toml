@@ -1,0 +1,25 @@
+[project]
+name = "TfJupyterM4"
+version = "0.1.0"
+description = "A Poetry-based project that lets you run Tensorflow and Jupyter locally on Apple M4 silicon with ease."
+authors = [
+    {name = "Janus Cheng",email = "drxaero@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "tensorflow-macos (>=2.16.2,<3.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "tensorflow-metal (>=1.2.0,<2.0.0)",
+    "jupyterlab-vim (>=4.1.4,<5.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+lab = "jupyter lab"
