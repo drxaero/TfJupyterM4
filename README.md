@@ -33,7 +33,7 @@ import tensorflow as tf
 
 tf.config.list_physical_devices('GPU')
 ```
-If GPU is detected, it show outputs a non-empty list:
+If GPU is detected, it outputs a non-empty list:
 ```python
 [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 ```
