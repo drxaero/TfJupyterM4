@@ -6,7 +6,7 @@ authors = [
     {name = "Janus Cheng",email = "drxaero@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
     "tensorflow-macos (>=2.16.2,<3.0.0)",
     "jupyter (>=1.1.1,<2.0.0)",
