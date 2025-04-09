@@ -25,3 +25,15 @@ Run the following command to launch Jupyter lab
 ```bash
 poetry poe lab
 ```
+
+## Check if GPU is available
+Run the following command in the Jupyter:
+```python
+import tensorflow as tf
+
+tf.config.list_physical_devices('GPU')
+```
+If GPU is detected, it show outputs a non-empty list:
+```python
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+```
