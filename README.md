@@ -15,7 +15,7 @@ Run the following commands in your shell to set up the environment:
 
 ```bash
 poetry env use python3.12
-poetry install
+poetry install --no-root
 ```
 
 
